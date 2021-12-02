@@ -106,7 +106,7 @@ hr {
 }
 
 .card {
-  border-radius: 1.5em;
+  border-radius: 0.9em;
   background-color: hsl(var(--clr-white));
   max-width: 450px;
   margin-inline: auto;
