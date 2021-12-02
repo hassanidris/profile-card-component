@@ -1,0 +1,169 @@
+/* ------------------- */
+/* Custom Properties   */
+/* ------------------- */
+:root {
+  /*  Primary Colors  */
+  --clr-darkCyan: 185 75% 39%;
+  --clr-veryDarkDesaturatedBlue: 229 23% 23%;
+  --clr-darkGrayishBlue: 227 10% 46%;
+  --clr-white: 0 0% 100%;
+  /*  Neutral Colors  */
+  --clr-darkGray: 0 0% 59%;
+  /*  font-size  */
+  --fs-200: 1.7rem;
+  --fs-100: 1.125rem;
+  --fs-80: 1rem;
+  --fs-50: .6rem;
+  /*  font-weight  */
+  --fw-700: 700;
+  --fw-400: 400;
+  /*  font-family  */
+  --ff-kumbh-sans: "Kumbh Sans", sans-serif;
+}
+
+/* ------------------- */
+/* Reset               */
+/* ------------------- */
+/*  Box sizing  */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/*  Reset Margins  */
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+p,
+figure,
+picture,
+blockquote,
+pre {
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+p {
+  font-weight: 500;
+}
+
+ol, ul, a {
+  list-style: none;
+  text-decoration: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+/*  setup the body  */
+body {
+  font-family: var(--ff-kumbh-sans);
+  font-size: var(--fs-100);
+  font-weight: var(--fw-400);
+  line-height: 1.7;
+  background: hsl(var(--clr-darkCyan));
+  min-height: 100vh;
+}
+
+/*  make images easier to work with  */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+a {
+  text-decoration: none;
+}
+
+hr {
+  color: hsl(var(--clr-veryDarkDesaturatedBlue));
+}
+
+/* ------------------- */
+/* Utility classes     */
+/* ------------------- */
+.wrapper {
+  background-image: url(../img/bg-pattern-bottom.svg), url(../img/bg-pattern-top.svg);
+  background-repeat: no-repeat;
+  background-position: left 50vw top 50vh, right 50vw bottom 50vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 1em;
+}
+
+.card {
+  border-radius: 1.5em;
+  background-color: hsl(var(--clr-white));
+  max-width: 450px;
+  margin-inline: auto;
+  overflow: hidden;
+  text-align: center;
+}
+.card__header-img {
+  z-index: 1;
+}
+.card__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.card__content__avatar {
+  border-radius: 50%;
+  border: 5px solid white;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.card__content__title {
+  font-size: var(--fs-100);
+  font-weight: var(--fw-700);
+  color: hsl(var(--clr-veryDarkDesaturatedBlue));
+  margin-top: 3em;
+}
+.card__content__age {
+  font-weight: var(--fw-400);
+  color: hsl(var(--clr-darkCyan));
+}
+.card__content__location {
+  font-weight: var(--fw-400);
+  font-size: var(--fs-80);
+  color: hsl(var(--clr-darkCyan));
+}
+.card__status {
+  display: flex;
+  flex-basis: 100%;
+  width: 100%;
+  border-top: 1px solid hsl(var(--clr-darkCyan)/0.5);
+  padding: 1em;
+  justify-content: space-around;
+}
+.card__status__item {
+  font-size: var(--fs-100);
+  font-weight: var(--fw-700);
+  color: hsl(var(--clr-veryDarkDesaturatedBlue));
+}
+.card__status__item span {
+  display: block;
+  color: hsl(var(--clr-darkCyan));
+  font-weight: var(--fw-400);
+  font-size: var(--fs-50);
+}
+
+/*# sourceMappingURL=style.css.map */
