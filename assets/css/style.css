@@ -150,7 +150,7 @@ hr {
   display: flex;
   flex-basis: 100%;
   width: 100%;
-  border-top: 1px solid hsl(var(--clr-darkCyan)/0.5);
+  border-top: 1px solid hsl(var(--clr-darkGray)/0.5);
   padding: 1em;
   justify-content: space-around;
 }
